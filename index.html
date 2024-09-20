@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    /> -->
+    <!-- link for the fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <!-- aside bar stats -->
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img src="./assets/images/pp.jpg" alt="my image" width="80" />
+          </figure>
+          <div class="info-content">
+            <h1 class="name" title="Subash Pariyar">Subash Pariyar</h1>
+            <p class="title">Front End Deceloper</p>
+          </div>
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+                <a
+                  class="contact-link"
+                  href="mailto: pariyarsubash2055@gmail.com"
+                  >pariyarsubash2055@gmail.com</a
+                >
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+                <a class="contact-link" href="tel: +1437-669-2055"
+                  >+1437-669-2055</a
+                >
+              </div>
+            </li>
+
+            <!-- <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+                <time datetime="1998-08-26">AUG 26, 1998</time>
+              </div>
+            </li> -->
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">LinkedIn</p>
+                <a
+                  class="contact-link"
+                  href="mailto: pariyarsubash2055@gmail.com"
+                  >https://www.linkedin.com/in/subash-pariyar/</a
+                >
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">GitHub</p>
+                <a
+                  class="contact-link"
+                  href="mailto: pariyarsubash2055@gmail.com"
+                  >https://github.com/subash431</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+                <address>Canada</address>
+              </div>
+            </li>
+          </ul>
+          <!-- <div class="separator">
+            <ul class="social-list">
+              <li class="social-item">
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+      </aside>
+      <!-- aside bar ends -->
+      <!-- main content -->
+      <div class="main-content">
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Blog</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- about -->
+        <article class="about active" data-page="about">
+          <header class="h2 article-title">About Me</header>
+          <section class="about-text">
+            <p>
+              I am a Front-End Developer and Designer with expertise in HTML,
+              CSS, JavaScript, React.js, and design tools like Figma and Adobe
+              Illustrator. I have worked at Encoder Inc Pvt. Ltd and Zeron
+              Technology, and also taught IT. Currently, I am studying Full
+              Stack Software Development at Lambton College, and hold a
+              Bachelor's in Computer Engineering from Pokhara University, with a
+              portfolio of web development projects.
+            </p>
+          </section>
+          <!-- service section -->
+          <section class="service">
+            <h3 class="h3 service-title">What I'm Doing</h3>
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-design.svg"
+                    alt="design icon"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web Design</h4>
+                  <p class="service-item-text">
+                    The most modern and high quality design at a professional
+                    level.
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./assets/images/icon-dev.svg" alt="design icon" />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web Development</h4>
+                  <p class="service-item-text">
+                    The most modern and high quality design at a professional
+                    level.
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./assets/images/icon-app.svg" alt="design icon" />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Mobile app</h4>
+                  <p class="service-item-text">
+                    The most modern and high quality design at a professional
+                    level.
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./assets/images/icon-photo.svg" alt="design icon" />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Design UI</h4>
+                  <p class="service-item-text">
+                    The most modern and high quality design at a professional
+                    level.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!-- tedtimonial section -->
+          <section class="testimonials">
+            <h3 class="h3 testimonial-title">Testimonial</h3>
+            <ul class="testimonial-list has-scrollbar">
+              <li class="testimonial-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonial-avatar-box">
+                    <img
+                      src="./assets/images/avatar-1.png"
+                      alt="avatar-testimonial"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+                  <h4 class="h4 testimonial-item-title" data-testimonials-title>
+                    Daniel Jhon Smith
+                  </h4>
+                  <div class="testimonial-text">
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Atque dolores eaque obcaecati ullam repudiandae quasi
+                      maiores ducimus hic at optio, reprehenderit sapiente
+                      consectetur quos ad vitae aliquid sit ipsum saepe,
+                      veritatis iusto eum cupiditate impedit provident!
+                      Consequatur culpa ratione minus explicabo magnam ab
+                      provident earum suscipit, omnis ea exercitationem ullam
+                      consectetur delectus quidem architecto quas cum
+                      laboriosam. Recusandae, deserunt delectus?
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="testimonial-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonial-avatar-box">
+                    <img
+                      src="./assets/images/avatar-1.png"
+                      alt="avatar-testimonial"
+                    />
+                  </figure>
+                  <h4 class="h4 testimonial-item-title" data-testimonials-title>
+                    Daniel Jhon Smith
+                  </h4>
+                  <div class="testimonial-text">
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Atque dolores eaque obcaecati ullam repudiandae quasi
+                      maiores ducimus hic at optio, reprehenderit sapiente
+                      consectetur quos ad vitae aliquid sit ipsum saepe,
+                      veritatis iusto eum cupiditate impedit provident!
+                      Consequatur culpa ratione minus explicabo magnam ab
+                      provident earum suscipit, omnis ea exercitationem ullam
+                      consectetur delectus quidem architecto quas cum
+                      laboriosam. Recusandae, deserunt delectus?
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="testimonial-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonial-avatar-box">
+                    <img
+                      src="./assets/images/avatar-1.png"
+                      alt="avatar-testimonial"
+                    />
+                  </figure>
+                  <h4 class="h4 testimonial-item-title" data-testimonials-title>
+                    Daniel Jhon Smith
+                  </h4>
+                  <div class="testimonial-text">
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Atque dolores eaque obcaecati ullam repudiandae quasi
+                      maiores ducimus hic at optio, reprehenderit sapiente
+                      consectetur quos ad vitae aliquid sit ipsum saepe,
+                      veritatis iusto eum cupiditate impedit provident!
+                      Consequatur culpa ratione minus explicabo magnam ab
+                      provident earum suscipit, omnis ea exercitationem ullam
+                      consectetur delectus quidem architecto quas cum
+                      laboriosam. Recusandae, deserunt delectus?
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="testimonial-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonial-avatar-box">
+                    <img
+                      src="./assets/images/avatar-1.png"
+                      alt="avatar-testimonial"
+                    />
+                  </figure>
+                  <h4 class="h4 testimonial-item-title" data-testimonials-title>
+                    Daniel Jhon Smith
+                  </h4>
+                  <div class="testimonial-text">
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Atque dolores eaque obcaecati ullam repudiandae quasi
+                      maiores ducimus hic at optio, reprehenderit sapiente
+                      consectetur quos ad vitae aliquid sit ipsum saepe,
+                      veritatis iusto eum cupiditate impedit provident!
+                      Consequatur culpa ratione minus explicabo magnam ab
+                      provident earum suscipit, omnis ea exercitationem ullam
+                      consectetur delectus quidem architecto quas cum
+                      laboriosam. Recusandae, deserunt delectus?
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <!-- testimonials models -->
+          <div class="model-container" data-model-container>
+            <div class="overlay" data-overlay></div>
+            <section class="testimonials-model">
+              <button class="model-close-btn" data-model-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+              <div class="model-img-wrapper">
+                <figure class="model-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt=""
+                    width="80"
+                    data-model-img
+                  />
+                </figure>
+                <img src="./assets/images/icon-quote.svg" alt="" />
+              </div>
+              <div class="model-content">
+                <h4 class="h3 model-title" data-model-title>Subash Pariyar</h4>
+                <time datetime="2022-01-01">Jan 01, 2024</time>
+                <div class="data-model-text">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolor libero maxime, similique commodi, fugiat minus numquam
+                    voluptates sapiente, quae rerum animi enim consequatur
+                    cupiditate iusto voluptatem quas non ipsam porro cum dolore
+                    tempora! Atque consectetur perferendis, in facilis cumque
+                    repellat quas id quaerat eos voluptatem! Aliquid natus
+                    necessitatibus eius itaque.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- clinents section  -->
+          <section class="clients">
+            <h3 class="h4 clients-title">Clients</h3>
+            <ul class="clients-list has-scrollbar">
+              <li class="clients-item">
+                <a href="#">
+                  <img src="./assets/images/logo-1-color.png" alt="" />
+                </a>
+              </li>
+              <li class="clients-item">
+                <a href="#">
+                  <img src="./assets/images/logo-2-color.png" alt="" />
+                </a>
+              </li>
+              <li class="clients-item">
+                <a href="#">
+                  <img src="./assets/images/logo-3-color.png" alt="" />
+                </a>
+              </li>
+              <li class="clients-item">
+                <a href="#">
+                  <img src="./assets/images/logo-4-color.png" alt="" />
+                </a>
+              </li>
+              <li class="clients-item">
+                <a href="#">
+                  <img src="./assets/images/logo-5-color.png" alt="" />
+                </a>
+              </li>
+              <li class="clients-item">
+                <a href="#">
+                  <img src="./assets/images/logo-6-color.png" alt="" />
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!-- Resume -->
+        <article class="resume" data-page="resume">
+          <h2 class="h2 article-title">Resume</h2>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Education</h3>
+            </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Lambton College</h4>
+                <span>2023 - Present</span>
+                <p>
+                  • Obtained proficiency in both front-end and back-end
+                  technologies, including React.js, Node.js, and databases like
+                  MongoDB. <br />
+                  • Learned to build and deploy full-stack web applications,
+                  utilizing client-server architecture. <br />
+                  • Developed skills in version control with Git and
+                  collaboration on projects using Agile methodologies.
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Pokhara Engineering College
+                </h4>
+                <span>2016 - 2021</span>
+                <p>
+                  • Strong foundation in hardware and software systems. <br />
+                  • Learned C++, Java, Python, and algorithms. <br />
+                  • Focus on database management and system architecture. <br />
+                  • Explored UX design, sparking interest in front-end
+                  development. <br />
+                  • Engaged in internships and practical projects.
+                </p>
+              </li>
+              
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Experience</h3>
+            </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">IT Instructor 	</h4>
+                <span>Shree Tri-Shaheed Model College, Syngja, Nepal</span>
+                <span>Oct 2022 – July 2023</span>
+                <p>
+                  •	Designed and delivered IT curriculum for high school students. <br>
+•	Created and administered assessments to evaluate student progress. <br>
+•	Conducted hands-on sessions in programming and computer fundamentals. <br>
+•	Stayed updated with industry trends to integrate new technologies into teaching.
+
+
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Front-End Developer</h4>
+                <span>Aug 2021–Sept 2022</span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                  ab iusto porro corporis commodi, numquam reprehenderit
+                  possimus quod quo nesciunt suscipit quae? Hic quis dolorum
+                  officiis ullam fugit, sunt qui!
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Front-End Developer</h4>
+                <span>Encoder Inc Pvt.Ltd, Pokhara, Nepal</span>
+                <span>Aug 2021–Sept 2022</span>
+                <p>
+                  •	Developed responsive web interfaces using HTML, CSS, JavaScript, and React.js. <br>
+                  •	Translated design mockups into functional user interfaces. <br>
+                  •	Optimized website performance through code splitting and lazy loading. <br>
+                  •	Collaborated with designers and back-end developers to improve user experience.
+                  
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Graphics Designer	</h4>
+                <span>Zeron Technology, Pokhara, Nepal</span>
+                <span>April 2020 – Dec 2020</span>
+                <p>
+                  •	Created design proposals and graphics for client projects. <br>
+                  •	Designed environmental graphics and wayfinding signage for various locations. <br>
+                  •	Developed visual assets and layouts for both digital and print media. <br>
+                  •	Collaborated with teams to deliver visually engaging solutions.
+                  
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="skills">
+            <h3 class="h3 skills-title">My Skill</h3>
+            <ul class="skill-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Web Design</h5>
+                </div>
+                <div class="skill-poress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Web Design</h5>
+                  <data value="80">80%</data>
+                </div>
+                <div class="skill-poress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Web Design</h5>
+                  <data value="80">80%</data>
+                </div>
+                <div class="skill-poress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Web Design</h5>
+                  <data value="80">80%</data>
+                </div>
+                <div class="skill-poress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Web Design</h5>
+                  <data value="80">80%</data>
+                </div>
+                <div class="skill-poress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+        <!-- Portfolio -->
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Web Design</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Graphics Design</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Web Application</button>
+              </li>
+            </ul>
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-select-value>
+                  Select Category
+                </div>
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Web Design</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Graphics Desich</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Web Application</button>
+                </li>
+              </ul>
+            </div>
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets//images/project-1.jpg"
+                      alt=""
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Finance</h3>
+                  <p class="project-category">Web Development</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets//images/project-1.jpg"
+                      alt=""
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Finance</h3>
+                  <p class="project-category">Web Development</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets//images/project-1.jpg"
+                      alt=""
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Finance</h3>
+                  <p class="project-category">Web Development</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web application"
+              >
+                <a href="">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets//images/project-1.jpg"
+                      alt=""
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Finance</h3>
+                  <p class="project-category">Web Development</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets//images/project-1.jpg"
+                      alt=""
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Finance</h3>
+                  <p class="project-category">Web Development</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets//images/project-1.jpg"
+                      alt=""
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Finance</h3>
+                  <p class="project-category">Web Development</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets//images/project-1.jpg"
+                      alt=""
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Finance</h3>
+                  <p class="project-category">Web Development</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets//images/project-1.jpg"
+                      alt=""
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Finance</h3>
+                  <p class="project-category">Web Development</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets//images/project-1.jpg"
+                      alt=""
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Finance</h3>
+                  <p class="project-category">Web Development</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+        <!-- blog -->
+        <article class="blog" data-page="blog">
+          <header>
+            <h2 class="h2 article-title">Blog</h2>
+          </header>
+          <section class="blog-title">
+            <ul class="blog-posts-list">
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-1.jpg"
+                      alt=""
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-catagory">Design</p>
+                      <span class="dot"></span>
+                      <time datetime="2024-09-19">September 19 2024</time>
+                    </div>
+                    <h3 class="h3 blog-item-title">
+                      Design Conference in 2022
+                    </h3>
+                    <p class="blog-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Reiciendis deserunt beatae voluptatum sed modi asperiores
+                      repellat commodi mollitia exercitationem alias! Laboriosam
+                      eligendi atque molestiae cum obcaecati ea numquam sit qui.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-1.jpg"
+                      alt=""
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-catagory">Design</p>
+                      <span class="dot"></span>
+                      <time datetime="2024-09-19">September 19 2024</time>
+                    </div>
+                    <h3 class="h3 blog-item-title">
+                      Design Conference in 2022
+                    </h3>
+                    <p class="blog-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Reiciendis deserunt beatae voluptatum sed modi asperiores
+                      repellat commodi mollitia exercitationem alias! Laboriosam
+                      eligendi atque molestiae cum obcaecati ea numquam sit qui.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-1.jpg"
+                      alt=""
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-catagory">Design</p>
+                      <span class="dot"></span>
+                      <time datetime="2024-09-19">September 19 2024</time>
+                    </div>
+                    <h3 class="h3 blog-item-title">
+                      Design Conference in 2022
+                    </h3>
+                    <p class="blog-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Reiciendis deserunt beatae voluptatum sed modi asperiores
+                      repellat commodi mollitia exercitationem alias! Laboriosam
+                      eligendi atque molestiae cum obcaecati ea numquam sit qui.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-1.jpg"
+                      alt=""
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-catagory">Design</p>
+                      <span class="dot"></span>
+                      <time datetime="2024-09-19">September 19 2024</time>
+                    </div>
+                    <h3 class="h3 blog-item-title">
+                      Design Conference in 2022
+                    </h3>
+                    <p class="blog-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Reiciendis deserunt beatae voluptatum sed modi asperiores
+                      repellat commodi mollitia exercitationem alias! Laboriosam
+                      eligendi atque molestiae cum obcaecati ea numquam sit qui.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-1.jpg"
+                      alt=""
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-catagory">Design</p>
+                      <span class="dot"></span>
+                      <time datetime="2024-09-19">September 19 2024</time>
+                    </div>
+                    <h3 class="h3 blog-item-title">
+                      Design Conference in 2022
+                    </h3>
+                    <p class="blog-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Reiciendis deserunt beatae voluptatum sed modi asperiores
+                      repellat commodi mollitia exercitationem alias! Laboriosam
+                      eligendi atque molestiae cum obcaecati ea numquam sit qui.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-1.jpg"
+                      alt=""
+                      loading="lazy"
+                    />
+                  </figure>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-catagory">Design</p>
+                      <span class="dot"></span>
+                      <time datetime="2024-09-19">September 19 2024</time>
+                    </div>
+                    <h3 class="h3 blog-item-title">
+                      Design Conference in 2022
+                    </h3>
+                    <p class="blog-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Reiciendis deserunt beatae voluptatum sed modi asperiores
+                      repellat commodi mollitia exercitationem alias! Laboriosam
+                      eligendi atque molestiae cum obcaecati ea numquam sit qui.
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+        <!-- Contact us -->
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92206.71585815548!2d-79.2291173!3d43.76331195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d05e9e66b609%3A0xf06e63ce2447807b!2sScarborough%2C%20ON!5e0!3m2!1sen!2sca!4v1726776880107!5m2!1sen!2sca"
+                width="400"
+                height="300"
+                loading="lazy"
+              ></iframe>
+            </figure>
+          </section>
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+            <form action="#" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full Name"
+                  required
+                  data-form-input
+                />
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email Address"
+                  required
+                  data-form-input
+                />
+              </div>
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
+              <button class="form-btn" type="submit" disabled data-form-input>
+                <ion-icon name="papper-plane"></ion-icon>
+                <span>Send Message </span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
